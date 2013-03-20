@@ -20,12 +20,35 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="200dp"
+        android:layout_marginLeft="250dp"
         android:text="hallo"
-        android:textSize="50sp"
-        >
+        android:textSize="50sp"/>
+    
+        <TextView
+        android:id="@+id/labelDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_alignBottom="@+id/TextFieldDate"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/labelName"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        
+        android:text="Date:"
+        android:textSize="50sp" />
 
-        <requestFocus />
-    </EditText>
+    <DatePicker
+        android:id="@+id/TextFieldDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="250dp"
+        android:layout_below="@id/labelName"
+        android:layout_marginTop="50dp"
+        
+        android:textSize="25sp"
+        />
 
 </RelativeLayout>
