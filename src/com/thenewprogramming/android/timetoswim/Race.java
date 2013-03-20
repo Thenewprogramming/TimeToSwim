@@ -82,8 +82,8 @@ public class Race {
 	 * @return True if the limit is reached,
 	 * false if not
 	 */
-	public boolean isLimitReached(int limitTime) {
-		LimitReached = limitTime >= ResultTime;
+	public boolean isLimitReached() {
+		LimitReached = Type.getLimit() >= ResultTime;
 		return LimitReached;
 	}
 

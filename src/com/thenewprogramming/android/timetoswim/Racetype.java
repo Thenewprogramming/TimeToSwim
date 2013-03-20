@@ -11,4 +11,32 @@ public class Racetype {
 		// TODO Auto-generated constructor stub
 	}
 
+	public String getName() {
+		return Name;
+	}
+
+	public void setName(String name) {
+		Name = name;
+	}
+
+	public int getPersonalRecord() {
+		return PersonalRecord;
+	}
+
+	public void setPersonalRecord(int personalRecord) {
+		PersonalRecord = personalRecord;
+	}
+
+	public int getLimit() {
+		return Limit;
+	}
+
+	public void setLimit(int limit) {
+		Limit = limit;
+	}
+
+	public int getId() {
+		return id;
+	}
+
 }
