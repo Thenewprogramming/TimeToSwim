@@ -24,7 +24,7 @@
         android:text="hallo"
         android:textSize="50sp"/>
     
-        <TextView
+    <TextView
         android:id="@+id/labelDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

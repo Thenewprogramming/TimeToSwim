@@ -78,7 +78,6 @@ public class Race {
 	
 	/**
 	 * Checks if the limit is reached in this race
-	 * @param limitTime The limit in seconds
 	 * @return True if the limit is reached,
 	 * false if not
 	 */
