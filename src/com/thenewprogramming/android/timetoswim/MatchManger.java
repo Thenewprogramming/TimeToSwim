@@ -17,7 +17,7 @@ public class MatchManger {
 		
 	}
 	
-	public void addRace(int id, Match match, int resulttime, Racetype type){
+	public void addRace(Match match, int resulttime, Racetype type){
 		int oldLengthOfRaces = Races.length;
 		Race[] BackupOfRaces = Races.clone();
 		Races = new Race[oldLengthOfRaces+1];
@@ -25,8 +25,8 @@ public class MatchManger {
 		for(int i = 0; i < oldLengthOfRaces; i++){
 			Races[i] = BackupOfRaces[i];
 		}
-		Races[oldLengthOfRaces] = new Race(id, match, resulttime, type);
-		
+		Races[oldLengthOfRaces] = new Race(NextMatchId, match, resulttime, type);
+		NextMatchId++;
 	}
 
 }
