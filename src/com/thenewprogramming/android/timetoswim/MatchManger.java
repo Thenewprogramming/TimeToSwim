@@ -13,8 +13,9 @@ public class MatchManger {
 	
 	
 	
-	public MatchManger() {
-		
+	public MatchManger(int nextmatchid, int nextraceid){
+		NextMatchId = nextmatchid;
+		NextRaceId = nextraceid;
 	}
 	
 	public void addRace(Match match, int resulttime, Racetype type){
