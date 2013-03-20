@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item
+		android:id="@+id/settingsmenu_save"
+		android:showAsAction="always|withText"
+		android:title="@string/settingsmenu_save"
+		android:icon="@drawable/savesettingsicon"
+		android:onClick="MenuItemSaveClicked"
+		/>
+	
+</menu>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+		
+		<TextView
+            android:id="@+id/textView_NewestBestTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="156dp"
+            android:layout_marginTop="44dp"
+            android:text="@string/Newest_Best_Time"
+            android:textSize="100sp" />
+
+		<TextView
+		    android:id="@+id/label_NewestBestTime"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/textView_NewestBestTime"
+		    android:layout_alignParentTop="true"
+		    android:layout_marginTop="27dp"
+		    android:text="Newest best time:"
+		    android:textSize="30sp" />
+
+		<TextView
+		    android:id="@+id/textView_NextMatch"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/label_NewestBestTime"
+		    android:layout_marginLeft="72dp"
+		    android:text="@string/Next_Match"
+		    android:textSize="50sp" />
+        
+		<TextView
+		    android:id="@+id/label_NextMatch"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/textView_NextMatch"
+		    android:layout_marginTop="27dp"
+		    android:text="Next Match:"
+		    android:textSize="30sp" />
+
+		<Button
+		    android:id="@+id/button1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/textView_NextMatch"
+		    android:layout_alignRight="@+id/textView_NextMatch"
+		    android:layout_below="@+id/textView_NextMatch"
+		    android:text="Add Match" 
+		    android:textAlignment="center"
+		    />
+		
+</RelativeLayout>

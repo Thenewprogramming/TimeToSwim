@@ -1,0 +1,22 @@
+package com.thenewprogramming.android.timetoswim;
+
+import android.app.*;
+import android.os.*;
+import android.view.*;
+
+public class AddMatchActivity extends Activity{
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_addmatch);
+
+	}
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.activity_addmatch, menu);
+		return true;
+	}
+	
+}
