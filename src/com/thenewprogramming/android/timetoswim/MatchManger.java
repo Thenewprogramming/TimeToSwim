@@ -1,5 +1,4 @@
 package com.thenewprogramming.android.timetoswim;
-import org.apache.http.impl.io.*;
 
 public class MatchManger {
 	
