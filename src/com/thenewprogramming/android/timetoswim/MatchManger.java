@@ -1,4 +1,5 @@
 package com.thenewprogramming.android.timetoswim;
+import org.apache.http.impl.io.*;
 
 public class MatchManger {
 	
@@ -41,5 +42,22 @@ public class MatchManger {
 		}
 		Matches[oldLengthOfMatches] = new Match(NextMatchId);
 		NextMatchId++;
+	}
+	
+	public Race getRaceById(int id){
+		Race race = null;
+		int i = 0;
+		
+		
+		while(race==null){
+			
+			if(Races[i].getId() == id){
+				race = Races[i];
+			}
+			
+			i++;
+		}
+		
+		return race;
 	}
 }
