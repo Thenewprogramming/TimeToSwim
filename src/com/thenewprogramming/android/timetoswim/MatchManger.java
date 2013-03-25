@@ -51,7 +51,7 @@ public class MatchManger {
 		int i = 0;
 		
 		
-		while(race==null){
+		while(race == null){
 			
 			if(Races[i].getId() == id){
 				race = Races[i];
@@ -61,5 +61,22 @@ public class MatchManger {
 		}
 		
 		return race;
+	}
+	
+	public Match getMatchById(int id){
+		Match match = null;
+		int i = 0;
+		
+		
+		while(match == null){
+			
+			if(Matches[i].getId() == id){
+				match = Matches[i];
+			}
+			
+			i++;
+		}
+		
+		return match;
 	}
 }
