@@ -6,9 +6,16 @@ public class Racetype {
 	private String Name;
 	private int PersonalRecord;
 	private int Limit;
+	private int Stroke;
+	private int Distance;
 	
-	public Racetype() {
-		// TODO Auto-generated constructor stub
+	public Racetype(int id, String name, int personalrecord, int limit, int stroke, int distance) {
+		this.id = id;
+		Name = name;
+		PersonalRecord = personalrecord;
+		Limit = limit;
+		Stroke = stroke;
+		Distance = distance;
 	}
 
 	public String getName() {
@@ -33,6 +40,14 @@ public class Racetype {
 
 	public void setLimit(int limit) {
 		Limit = limit;
+	}
+
+	public int getStroke() {
+		return Stroke;
+	}
+
+	public void setStroke(int stroke) {
+		Stroke = stroke;
 	}
 
 	public int getId() {

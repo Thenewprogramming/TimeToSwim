@@ -3,19 +3,29 @@ package com.thenewprogramming.android.timetoswim;
 public class MatchManger {
 	
 	private Race[] Races;
-	private Racetype[] Racetypes;
 	private Match[] Matches;
+	private Racetype[] Racetypes;
+	private Stroke[] Strokes;
+	private int[] Distances = {
+		25, 50, 100, 200, 400, 800, 1500
+	};
+	
 	
 	//The id to be given to the next new race
 	private int NextRaceId;
 	//The id to be given to the next new match
 	private int NextMatchId;
+	//The id to be given to the next new racetype
+	private int NextRaceTypeId;
+	//The id to be given to the next new stroke
+	private int NextStrokeId;
 	
 	
-	
-	public MatchManger(int nextmatchid, int nextraceid){
+	public MatchManger(int nextmatchid, int nextraceid, int nextracetypeid, int nextstrokeid){
 		NextMatchId = nextmatchid;
 		NextRaceId = nextraceid;
+		NextRaceTypeId = nextracetypeid;
+		NextStrokeId = nextstrokeid;
 	}
 	
 	public int addRace(Match match, int resulttime, Racetype type){
@@ -44,6 +54,20 @@ public class MatchManger {
 		Matches[oldLengthOfMatches] = new Match(NextMatchId, date, name, races);
 		NextMatchId++;
 		return Matches[oldLengthOfMatches].getId();
+	}
+	
+	public int addRaceType(String name, int personalrecord, int limit, int stroke, int distance){
+		int oldLengthOfRacetypes = Racetypes.length;
+		Racetype[] BackupOfRaceTypes = Racetypes.clone();
+		Racetypes = new Racetype[oldLengthOfRacetypes+1];
+
+		for(int i = 0; i < oldLengthOfRacetypes; i++){
+			Racetypes[i] = BackupOfRaceTypes[i];
+		}
+		
+		Racetypes[oldLengthOfRacetypes] = new Racetype(NextRaceTypeId, name, personalrecord, limit, stroke, distance);
+		NextRaceTypeId++;
+		return Racetypes[oldLengthOfRacetypes].getId();
 	}
 	
 	public Race getRaceById(int id){
