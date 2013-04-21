@@ -5,10 +5,6 @@ public class MatchManger {
 	private Race[] Races;
 	private Match[] Matches;
 	private Racetype[] Racetypes;
-	private Stroke[] Strokes;
-	private int[] Distances = {
-		25, 50, 100, 200, 400, 800, 1500
-	};
 	
 	
 	//The id to be given to the next new race
@@ -65,7 +61,7 @@ public class MatchManger {
 			Racetypes[i] = BackupOfRaceTypes[i];
 		}
 		
-		Racetypes[oldLengthOfRacetypes] = new Racetype(NextRaceTypeId, name, personalrecord, limit, stroke, distance);
+		Racetypes[oldLengthOfRacetypes] = new Racetype(NextRaceTypeId, name, personalrecord, stroke, distance);
 		NextRaceTypeId++;
 		return Racetypes[oldLengthOfRacetypes].getId();
 	}
