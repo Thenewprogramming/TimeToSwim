@@ -1,5 +1,9 @@
 package com.thenewprogramming.android.timetoswim;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Date;
+
 public class Match {
 	
 	private int id;
@@ -10,14 +14,16 @@ public class Match {
 	private int[] Date = new int[]{Year, Month, Day};
 	
 	private String Name;
-	private int[] Races;
+	private ArrayList<Integer> Races = new ArrayList<Integer>();
 	
 	
 	public Match(int id, int[] date, String name, int[] races) {
 		this.id = id;
 		Date = date;
 		Name = name;
-		Races = races;
+		for(int i = 0; i < races.length; i++){
+			Races.add(races[i]);
+		}
 	}
 	
 	public Match(int id){
@@ -29,8 +35,13 @@ public class Match {
 	 * Gets the races of this match
 	 * @return The races of this match
 	 */
-	public int[] getRaces() {
-		return Races;
+	public ArrayList<Integer> getRaces() {
+		Race[] races = (Race[]) Races.toArray();
+		ArrayList<Integer> TheIntArrayToReturn = null;
+		for(int i = 0; i < races.length; i++){
+			TheIntArrayToReturn.add(races[i].getId());
+		}
+		return TheIntArrayToReturn;
 	}
 
 
@@ -38,7 +49,7 @@ public class Match {
 	 * Sets the races of this match
 	 * @param races The new races of this match
 	 */
-	public void setRaces(int[] races) {
+	public void setRaces(ArrayList<Integer> races) {
 		Races = races;
 	}
 

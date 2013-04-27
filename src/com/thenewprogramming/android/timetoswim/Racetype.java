@@ -1,24 +1,30 @@
 package com.thenewprogramming.android.timetoswim;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Racetype {
 	
 	private int id;
 	private String Name;
 	private int PersonalRecord;
-	/*private int Limit;*/
+//	private int Limit;
 	private int Stroke;
 	private int Distance;
-	private int[] Distances = { 25, 50, 100, 200, 400, 800, 1500 };
-	private String[] Strokes = { "Vlinderslag", "Rugslag", "Schoolslag", "Vrije slag" };
+	private ArrayList<Integer> Distances = new ArrayList<Integer>() {{add(25); add(50); add(100); add(200); add(400); add(800); add(1500);}};
+	private ArrayList<String> Strokes;
 	
 	
 	public Racetype(int id, String name, int personalrecord, /*int limit,*/ int stroke, int distance) {
 		this.id = id;
 		Name = name;
 		PersonalRecord = personalrecord;
-		/*Limit = limit;*/
+//		Limit = limit;
 		Stroke = stroke;
 		Distance = distance;
+		
+		//Filling up the array of strokenames
+		Strokes.add("Vlinderslag");Strokes.add("Rugslag");Strokes.add("Schoolslag");Strokes.add("Vrije Slag");
 	}
 
 	public String getName() {
