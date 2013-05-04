@@ -10,6 +10,9 @@ import android.widget.Button;
 import android.widget.DatePicker;
 
 public class AddMatchActivity extends FragmentActivity implements DatePickerDialog.OnDateSetListener{
+	
+	private Button buttonSetDate;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -25,17 +28,19 @@ public class AddMatchActivity extends FragmentActivity implements DatePickerDial
 	}
 	
 	public void ShowDatePickerDialog(View view) {
-	    DialogFragment TheDatePickerDialog = new DatePickerFragment();
+	    buttonSetDate = (Button) view;
+		DialogFragment TheDatePickerDialog = new DatePickerFragment();
 	    TheDatePickerDialog.show(getFragmentManager(), "Choose a date");
+		
 	}
 
 	@Override
 	public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
 		String date = year + monthOfYear + dayOfMonth + "";
 		
-		final Button buttonSetDate = (Button) findViewById(R.id.ButtonSetDate);
+//		Button buttonSetDate = (Button) findViewById(R.id.ButtonSetDate);
 		buttonSetDate.setText(date.subSequence(0, date.length()-1));
-		
+//		buttonSetDate.setActivated(true);
 	}
 	
 	
