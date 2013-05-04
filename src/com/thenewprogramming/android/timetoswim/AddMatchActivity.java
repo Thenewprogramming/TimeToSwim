@@ -33,8 +33,8 @@ public class AddMatchActivity extends FragmentActivity implements DatePickerDial
 	public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
 		String date = year + monthOfYear + dayOfMonth + "";
 		
-//		final Button buttonSetDate = (Button) findViewById(R.id.ButtonSetDate);
-//		buttonSetDate.setText(date.subSequence(0, date.length()-1));
+		final Button buttonSetDate = (Button) findViewById(R.id.ButtonSetDate);
+		buttonSetDate.setText(date.subSequence(0, date.length()-1));
 		
 	}
 	
