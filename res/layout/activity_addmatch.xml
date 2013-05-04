@@ -38,8 +38,9 @@
         android:text="Date:"
         android:textSize="50sp" />
 
-    <DatePicker
-        android:id="@+id/TextFieldDate"
+    <Button
+        android:id="@+id/ButtonSetDate"
+        android:text="@string/AddMatchActivity_CurrentDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         
@@ -50,6 +51,8 @@
         
         android:textSize="25sp"
         android:calendarViewShown="false"
+		android:onClick="ShowDatePickerDialog"
+
         />
 
 </RelativeLayout>

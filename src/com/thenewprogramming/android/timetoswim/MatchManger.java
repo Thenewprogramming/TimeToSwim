@@ -37,9 +37,23 @@ public class MatchManger {
 		return Matches.get(Races.size()-1).getId();
 	}
 	
+
 	public int addRaceType(String name, int personalrecord, int limit, int stroke, int distance){
 		Racetypes.add(new Racetype(NextRaceTypeId, name, personalrecord, stroke, distance));
 		return Matches.get(Races.size()-1).getId();
+	}
+	public int addRaceType(String name, int personalrecord, int limit, String stroke, int distance){
+		int oldLengthOfRacetypes = Racetypes.length;
+		Racetype[] BackupOfRaceTypes = Racetypes.clone();
+		Racetypes = new Racetype[oldLengthOfRacetypes+1];
+
+		for(int i = 0; i < oldLengthOfRacetypes; i++){
+			Racetypes[i] = BackupOfRaceTypes[i];
+		}
+		
+		Racetypes[oldLengthOfRacetypes] = new Racetype(NextRaceTypeId, name, personalrecord, stroke, distance);
+		NextRaceTypeId++;
+		return Racetypes[oldLengthOfRacetypes].getId();
 	}
 	
 	public Race getRaceById(int id){
