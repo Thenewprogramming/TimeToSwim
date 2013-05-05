@@ -19,20 +19,22 @@ public final class R {
         public static final int savesettingsicon=0x7f020002;
     }
     public static final class id {
+        public static final int AddMatchActivity_ButtonDone=0x7f080007;
+        public static final int AddMatchActivity_ListviewRaces=0x7f080006;
         public static final int ButtonSetDate=0x7f080005;
         public static final int TextFieldDate=0x7f080004;
         public static final int TextFieldName=0x7f080002;
-        public static final int button1=0x7f08000a;
+        public static final int button1=0x7f08000c;
         public static final int labelDate=0x7f080003;
         public static final int labelName=0x7f080001;
-        public static final int label_NewestBestTime=0x7f080007;
-        public static final int label_NextMatch=0x7f080009;
-        public static final int menu_about=0x7f08000c;
-        public static final int menu_addmatch=0x7f08000d;
-        public static final int menu_settings=0x7f08000b;
-        public static final int settingsmenu_save=0x7f08000e;
-        public static final int textView_NewestBestTime=0x7f080006;
-        public static final int textView_NextMatch=0x7f080008;
+        public static final int label_NewestBestTime=0x7f080009;
+        public static final int label_NextMatch=0x7f08000b;
+        public static final int menu_about=0x7f08000e;
+        public static final int menu_addmatch=0x7f08000f;
+        public static final int menu_settings=0x7f08000d;
+        public static final int settingsmenu_save=0x7f080010;
+        public static final int textView_NewestBestTime=0x7f080008;
+        public static final int textView_NextMatch=0x7f08000a;
         public static final int textview_aboutText=0x7f080000;
     }
     public static final class layout {

@@ -53,5 +53,24 @@
 		android:onClick="ShowDatePickerDialog"
 
         />
+		
+		<ListView
+			android:id="@+id/AddMatchActivity_ListviewRaces"
+
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			
+			
+		/>
+		
+		<Button
+			android:id="@+id/AddMatchActivity_ButtonDone"
+			android:text="Done"
+			android:textSize="25sp"
+			android:onClick="ButtonDoneClicked"
+			
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+		/>
 
 </RelativeLayout>
