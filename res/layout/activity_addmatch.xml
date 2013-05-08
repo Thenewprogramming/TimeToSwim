@@ -3,35 +3,39 @@
 	android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 
-    <TextView
-        android:id="@+id/labelName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/TextFieldName"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="50dp"
-        android:text="Name:"
-        android:textSize="50sp" />
+    
 
     <EditText
-        android:id="@+id/TextFieldName"
+        android:id="@+id/AddMatchActivity_TextFieldName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="250dp"
+        android:layout_marginTop="10dp"
         android:text="hallo"
-        android:textSize="50sp"/>
+        android:singleLine="true"
+        android:textSize="30sp"/>
     
     <TextView
-        android:id="@+id/labelDate"
+        android:id="@+id/AddMatchActivity_LabelName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        
-        android:layout_alignBottom="@+id/TextFieldDate"
+        android:layout_alignBottom="@id/AddMatchActivity_TextFieldName"
         android:layout_alignParentLeft="true"
-        android:layout_below="@id/labelName"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="50dp"
+        android:text="Name:"
+        android:textSize="50sp" />
+    
+    
+    <TextView
+        android:id="@+id/AddMatchActivity_LabelDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/AddMatchActivity_LabelName"
         android:layout_marginTop="50dp"
         android:layout_marginLeft="50dp"
         
@@ -39,18 +43,19 @@
         android:textSize="50sp" />
 
     <Button
-        android:id="@+id/ButtonSetDate"
+        android:id="@+id/AddMatchActivity_ButtonSetDate"
         android:text="@string/AddMatchActivity_CurrentDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="250dp"
-        android:layout_below="@id/labelName"
-        android:layout_marginTop="50dp"
+        android:layout_alignTop="@id/AddMatchActivity_LabelDate"
+        android:layout_marginTop="10dp"
+        android:layout_alignBottom="@id/AddMatchActivity_LabelDate"
         
         android:textSize="25sp"
-		android:onClick="ShowDatePickerDialog"
+		android:onClick="OnButtonClicked"
 
         />
 		
@@ -67,7 +72,7 @@
 			android:id="@+id/AddMatchActivity_ButtonDone"
 			android:text="Done"
 			android:textSize="25sp"
-			android:onClick="ButtonDoneClicked"
+			android:onClick="OnButtonClicked"
 			
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"

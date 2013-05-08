@@ -1,28 +1,30 @@
 package com.thenewprogramming.android.timetoswim;
 
 import android.app.DatePickerDialog;
-import android.app.DialogFragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.EditText;
 
 public class AddMatchActivity extends FragmentActivity implements DatePickerDialog.OnDateSetListener{
 	
-	private Button buttonSetDate;
-	private int Year = 1;
-	private int MonthOfYear = 1;
-	private int DayOfMonth = 1;
 	
+	public static AddMatchActivity TheOnDateSetListener = new AddMatchActivity();
 	
+	private int Year;
+	private int MonthOfYear;
+	private int DayOfMonth;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_addmatch);
-		
+		getActionBar().setDisplayHomeAsUpEnabled(true);
 	}
 	
 	@Override
@@ -32,15 +34,9 @@ public class AddMatchActivity extends FragmentActivity implements DatePickerDial
 		return true;
 	}
 	
-	public void ShowDatePickerDialog(View view) {
-	    buttonSetDate = (Button) view;
-		System.out.println(view.getId());
-		DialogFragment TheDatePickerDialog = new DatePickerFragment();
+	public void ShowDatePickerDialog() {
 		
-		
-		if(!(Year==1)){
-			TheDatePickerDialog = new DatePickerFragment(Year, MonthOfYear, DayOfMonth);
-		}
+		DatePickerFragment TheDatePickerDialog = new DatePickerFragment();
 		
 	    TheDatePickerDialog.show(getFragmentManager(), "Choose a date");
 		
@@ -48,29 +44,54 @@ public class AddMatchActivity extends FragmentActivity implements DatePickerDial
 
 	@Override
 	public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
-		String date = year + monthOfYear + dayOfMonth + "";
 		
-		try{
-			//buttonSetDate.setText(date.subSequence(0, date.length()-1));
-			buttonSetDate.setText("date");
-		}
-		catch(Exception e){
-			System.out.println("Something went wrong " + e.getMessage());
-		}
+		DatePickerFragment.setDate(view.getYear(), view.getMonth(), view.getDayOfMonth());
 		
-		Year = year;
-		MonthOfYear = monthOfYear;
-		DayOfMonth = dayOfMonth;
+		Year = view.getYear();
+		MonthOfYear = view.getMonth();
+		DayOfMonth = view.getDayOfMonth();
 		
 	}
 	
-	public void ButtonDoneClicked(View view){
-		//view.setClickable(false);
-		Button ButtonDone = (Button) view;
-		ButtonDone.setText("hoi");
+	public void SaveTheMatch(){
+		int[] date = new int[3];
+		date[1]=Year;date[2]=MonthOfYear;date[3]=DayOfMonth;
+		
+		EditText textfieldName = (EditText) findViewById(R.id.AddMatchActivity_TextFieldName);
+		String name = textfieldName.getText().toString();
+		
+		
+		MatchManager.addMatch(date, name, null);
+		
+		
 	}
 	
 	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+	    switch (item.getItemId()) {
+	        case android.R.id.home:
+	            Intent parentActivityIntent = new Intent(this, HomeActivity.class);
+	            parentActivityIntent.addFlags(
+	                    Intent.FLAG_ACTIVITY_CLEAR_TOP |
+	                    Intent.FLAG_ACTIVITY_NEW_TASK);
+	            startActivity(parentActivityIntent);
+	            finish();
+	            return true;
+	        case R.id.AddMatchActivity_Save:
+	        	SaveTheMatch();
+	    }
+	    return super.onOptionsItemSelected(item);
+	}
+
 	
+	public void OnButtonClicked(View view){
+		switch (view.getId()){
+			case R.id.AddMatchActivity_ButtonSetDate:
+				ShowDatePickerDialog();
+			case R.id.AddMatchActivity_ButtonDone:
+				SaveTheMatch();
+		}
+	}
 	
 }

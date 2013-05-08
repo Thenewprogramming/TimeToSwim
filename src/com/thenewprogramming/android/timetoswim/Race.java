@@ -2,14 +2,14 @@ package com.thenewprogramming.android.timetoswim;
 
 public class Race {
 	
-	private Match Match;
+	private int Match;
 	private int ResultTime; //Result time in seconds.
 	private int id;
-	private Racetype Type; //Example: 100m butterfly
+	private int Type; //Example: 100m butterfly
 	private boolean LimitReached;
 	
 	
-	public Race(int id, Match match, int resulttime, Racetype type){
+	public Race(int id, int match, int resulttime, int type){
 		this.id = id;
 		Match = match;
 		ResultTime = resulttime;
@@ -25,14 +25,14 @@ public class Race {
 	 * @return The match this race is in
 	 */
 	public Match getMatch() {
-		return Match;
+		return MatchManager.getMatchById(Match);
 	}
 
 	/**
 	 * Sets the match this race is in
 	 * @param match The new race this match should be in
 	 */
-	public void setMatch(Match match) {
+	public void setMatch(int match) {
 		Match = match;
 	}
 
@@ -57,14 +57,14 @@ public class Race {
 	 * @return The type of this race
 	 */
 	public Racetype getType() {
-		return Type;
+		return MatchManager.getRacetypeById(Type);
 	}
 
 	/**
 	 * Sets the type of this race
 	 * @param type The new type of this race
 	 */
-	public void setType(Racetype type) {
+	public void setType(int type) {
 		this.Type = type;
 	}
 
