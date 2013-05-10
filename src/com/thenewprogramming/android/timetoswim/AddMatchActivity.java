@@ -1,15 +1,11 @@
 package com.thenewprogramming.android.timetoswim;
 
-import android.app.DatePickerDialog;
-import android.content.Intent;
-import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.DatePicker;
-import android.widget.EditText;
+import android.app.*;
+import android.content.*;
+import android.os.*;
+import android.support.v4.app.*;
+import android.view.*;
+import android.widget.*;
 
 public class AddMatchActivity extends FragmentActivity implements DatePickerDialog.OnDateSetListener{
 	
@@ -72,16 +68,16 @@ public class AddMatchActivity extends FragmentActivity implements DatePickerDial
 	    switch (item.getItemId()) {
 	        case android.R.id.home:
 	            Intent parentActivityIntent = new Intent(this, HomeActivity.class);
-	            parentActivityIntent.addFlags(
-	                    Intent.FLAG_ACTIVITY_CLEAR_TOP |
-	                    Intent.FLAG_ACTIVITY_NEW_TASK);
+	            parentActivityIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
 	            startActivity(parentActivityIntent);
 	            finish();
 	            return true;
-	        case R.id.AddMatchActivity_Save:
+	        case R.id.AddMatchActivity_MenuSave:
 	        	SaveTheMatch();
+				return true;
+			default:
+				return super.onOptionsItemSelected(item);	
 	    }
-	    return super.onOptionsItemSelected(item);
 	}
 
 	

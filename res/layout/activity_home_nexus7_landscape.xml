@@ -5,7 +5,7 @@
     android:layout_height="fill_parent">
 		
 		<TextView
-            android:id="@+id/textView_NewestBestTime"
+            android:id="@+id/HomeActivity_TextViewNewestBestTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
@@ -16,7 +16,7 @@
             android:textSize="100sp" />
 
 		<TextView
-		    android:id="@+id/label_NewestBestTime"
+		    android:id="@+id/HomeActivity_LabelNewestBestTime"
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
 		    android:layout_alignLeft="@+id/textView_NewestBestTime"
@@ -26,7 +26,7 @@
 		    android:textSize="30sp" />
 
 		<TextView
-		    android:id="@+id/textView_NextMatch"
+		    android:id="@+id/HomeActivity_TextViewNextMatch"
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
 		    android:layout_alignParentLeft="true"
@@ -36,7 +36,7 @@
 		    android:textSize="50sp" />
         
 		<TextView
-		    android:id="@+id/label_NextMatch"
+		    android:id="@+id/HomeActivity_LabelNextMatch"
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
 		    android:layout_alignLeft="@+id/textView_NextMatch"

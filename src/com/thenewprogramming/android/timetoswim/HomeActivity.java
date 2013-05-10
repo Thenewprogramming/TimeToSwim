@@ -11,6 +11,7 @@ public class HomeActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		System.out.println(getRequestedOrientation());
+		
 		setContentView(R.layout.activity_home_nexus7_landscape);
 		
 	}
@@ -22,15 +23,33 @@ public class HomeActivity extends Activity {
 		return true;
 	}
 	
-	public void MenuItemAddMatchClicked(MenuItem item){
+	public void ShowAddMatchActivity(){
 		Intent AddMatchIntent = new Intent(this, AddMatchActivity.class);
 		startActivity(AddMatchIntent);
 		//System.out.println("Add Match is a working progress, please wait for the next update.");
 	}
 	
-	public void MenuItemSettingsClicked(MenuItem item){
+	public void ShowSettingsActivity(){
 		Intent SettingsIntent = new Intent(this, SettingsActivity.class);
 		startActivity(SettingsIntent);
+	}
+	
+	public void OnButtonClicked(View view){
+		
+	}
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch(item.getItemId()){
+			case R.id.HomeActivity_MenuAddMatch:
+				ShowAddMatchActivity();
+				return true;
+			case R.id.HomeActivity_MenuSettings:
+				ShowSettingsActivity();
+				return true;
+			default:
+				return super.onOptionsItemSelected(item);
+		}
 	}
 	
 }
