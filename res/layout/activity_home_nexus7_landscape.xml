@@ -19,7 +19,7 @@
 		    android:id="@+id/HomeActivity_LabelNewestBestTime"
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
-		    android:layout_alignLeft="@+id/textView_NewestBestTime"
+		    android:layout_alignLeft="@+id/HomeActivity_TextViewNewestBestTime"
 		    android:layout_alignParentTop="true"
 		    android:layout_marginTop="27dp"
 		    android:text="Newest best time:"
@@ -30,7 +30,7 @@
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
 		    android:layout_alignParentLeft="true"
-		    android:layout_below="@+id/label_NewestBestTime"
+		    android:layout_below="@+id/HomeActivity_LabelNewestBestTime"
 		    android:layout_marginLeft="72dp"
 		    android:text="@string/Next_Match"
 		    android:textSize="50sp" />
@@ -39,20 +39,9 @@
 		    android:id="@+id/HomeActivity_LabelNextMatch"
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
-		    android:layout_alignLeft="@+id/textView_NextMatch"
+		    android:layout_alignLeft="@+id/HomeActivity_TextViewNextMatch"
 		    android:layout_marginTop="27dp"
 		    android:text="Next Match:"
 		    android:textSize="30sp" />
-
-		<Button
-		    android:id="@+id/button1"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:layout_alignLeft="@+id/textView_NextMatch"
-		    android:layout_alignRight="@+id/textView_NextMatch"
-		    android:layout_below="@+id/textView_NextMatch"
-		    android:text="Add Match" 
-		    android:textAlignment="center"
-		    />
 		
 </RelativeLayout>
