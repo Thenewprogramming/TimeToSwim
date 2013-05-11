@@ -12,7 +12,7 @@ public class HomeActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		System.out.println(getRequestedOrientation());
 		
-		setContentView(R.layout.activity_home_nexus7_landscape);
+		setContentView(R.layout.activity_home_alldevices);
 		
 	}
 
