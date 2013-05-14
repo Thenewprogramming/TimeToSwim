@@ -22,12 +22,13 @@
         android:textSize="25sp" />
 	
     <Button
-	    android:id="@+id/AddMatchActivity_ButtonAddRace"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:text="Add Race"
-	    android:textAlignment="center"
-	    android:textSize="25sp" />
+        android:id="@+id/AddMatchActivity_ButtonAddRace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="OnButtonClicked"
+        android:text="Add Race"
+        android:textAlignment="center"
+        android:textSize="25sp" />
     	
 	<ListView
 	    android:id="@+id/AddMatchActivity_ListviewRaces"

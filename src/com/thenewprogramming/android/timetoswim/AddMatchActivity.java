@@ -1,13 +1,17 @@
 package com.thenewprogramming.android.timetoswim;
 
-import android.app.*;
-import android.content.*;
-import android.os.*;
-import android.support.v4.app.*;
-import android.view.*;
-import android.widget.*;
+import android.app.DatePickerDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.DatePicker;
+import android.widget.EditText;
 
-public class AddMatchActivity extends FragmentActivity implements DatePickerDialog.OnDateSetListener{
+public class AddMatchActivity extends FragmentActivity implements DatePickerDialog.OnDateSetListener, DialogInterface.OnClickListener{
 	
 	
 	public static AddMatchActivity TheOnDateSetListener = new AddMatchActivity();
@@ -36,6 +40,12 @@ public class AddMatchActivity extends FragmentActivity implements DatePickerDial
 		
 	    TheDatePickerDialog.show(getFragmentManager(), "Choose a date");
 		
+	}
+	
+	public void ShowAddRaceDialog(){
+		AddRaceFragment TheAddRaceDialog = new AddRaceFragment();
+		
+	    TheAddRaceDialog.show(getFragmentManager(), "Add Race");
 	}
 
 	@Override
@@ -85,9 +95,18 @@ public class AddMatchActivity extends FragmentActivity implements DatePickerDial
 		switch (view.getId()){
 			case R.id.AddMatchActivity_ButtonSetDate:
 				ShowDatePickerDialog();
-			case R.id.AddMatchActivity_ButtonDone:
-				SaveTheMatch();
+				break;
+			case R.id.AddMatchActivity_ButtonAddRace:
+				ShowAddRaceDialog();
 		}
+	}
+
+	@Override
+	public void onClick(DialogInterface dialog, int id) {
+		switch(id){
+		
+		}
+		
 	}
 	
 }

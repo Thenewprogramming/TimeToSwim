@@ -22,31 +22,33 @@ public final class R {
         public static final int savesettingsicon=0x7f020002;
     }
     public static final class id {
-        public static final int AddMatchActivity_ButtonAddRace=0x7f090007;
-        public static final int AddMatchActivity_ButtonDone=0x7f090006;
-        public static final int AddMatchActivity_ButtonSetDate=0x7f090004;
-        public static final int AddMatchActivity_LabelDate=0x7f090003;
-        public static final int AddMatchActivity_LabelName=0x7f090002;
-        public static final int AddMatchActivity_ListviewRaces=0x7f090005;
-        public static final int AddMatchActivity_MenuSave=0x7f09000c;
+        public static final int AddMatchActivity_ButtonAddRace=0x7f090003;
+        public static final int AddMatchActivity_ButtonDone=0x7f090007;
+        public static final int AddMatchActivity_ButtonSetDate=0x7f090002;
+        public static final int AddMatchActivity_LabelDate=0x7f090006;
+        public static final int AddMatchActivity_LabelName=0x7f090005;
+        public static final int AddMatchActivity_ListviewRaces=0x7f090004;
+        public static final int AddMatchActivity_MenuSave=0x7f09000d;
         public static final int AddMatchActivity_TextFieldName=0x7f090001;
+        public static final int AddRaceDialog_RaceTypeSelector=0x7f09000c;
         public static final int HomeActivity_LabelNewestBestTime=0x7f090009;
         public static final int HomeActivity_LabelNextMatch=0x7f09000b;
-        public static final int HomeActivity_MenuAddMatch=0x7f09000f;
-        public static final int HomeActivity_MenuSettings=0x7f09000d;
+        public static final int HomeActivity_MenuAddMatch=0x7f090010;
+        public static final int HomeActivity_MenuSettings=0x7f09000e;
         public static final int HomeActivity_TextViewNewestBestTime=0x7f090008;
         public static final int HomeActivity_TextViewNextMatch=0x7f09000a;
-        public static final int SettingsActivity_MenuSave=0x7f090010;
-        public static final int menu_about=0x7f09000e;
+        public static final int SettingsActivity_MenuSave=0x7f090011;
+        public static final int menu_about=0x7f09000f;
         public static final int textview_aboutText=0x7f090000;
     }
     public static final class layout {
         public static final int activity_about=0x7f030000;
         public static final int activity_addmatch=0x7f030001;
-        public static final int activity_addmatch_linear=0x7f030002;
+        public static final int activity_addmatch_old=0x7f030002;
         public static final int activity_home_alldevices=0x7f030003;
         public static final int activity_home_nexus7_landscape=0x7f030004;
         public static final int activity_settings=0x7f030005;
+        public static final int add_race_dialog=0x7f030006;
     }
     public static final class menu {
         public static final int activity_addmatch=0x7f080000;
