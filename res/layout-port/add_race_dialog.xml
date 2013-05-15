@@ -5,10 +5,16 @@
     android:orientation="vertical" >
 
     <Spinner
-        android:id="@+id/AddRaceDialog_RaceTypeSelector"
+        android:id="@+id/AddRaceDialog_StrokeSelector"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Select Racetype"
-         />
+        android:entries="@array/strokes"
+        android:tag="Select Stroke"
+        />
+
+    <Spinner
+        android:id="@+id/AddRaceDialog_DistanceSelector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

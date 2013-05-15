@@ -9,12 +9,13 @@ package com.thenewprogramming.android.timetoswim;
 
 public final class R {
     public static final class array {
-        public static final int Test=0x7f060000;
+        public static final int Test=0x7f040000;
+        public static final int strokes=0x7f040001;
     }
     public static final class attr {
     }
     public static final class color {
-        public static final int red=0x7f040000;
+        public static final int red=0x7f050000;
     }
     public static final class drawable {
         public static final int addmatchicon=0x7f020000;
@@ -28,17 +29,18 @@ public final class R {
         public static final int AddMatchActivity_LabelDate=0x7f090006;
         public static final int AddMatchActivity_LabelName=0x7f090005;
         public static final int AddMatchActivity_ListviewRaces=0x7f090004;
-        public static final int AddMatchActivity_MenuSave=0x7f09000d;
+        public static final int AddMatchActivity_MenuSave=0x7f09000e;
         public static final int AddMatchActivity_TextFieldName=0x7f090001;
-        public static final int AddRaceDialog_RaceTypeSelector=0x7f09000c;
+        public static final int AddRaceDialog_DistanceSelector=0x7f09000d;
+        public static final int AddRaceDialog_StrokeSelector=0x7f09000c;
         public static final int HomeActivity_LabelNewestBestTime=0x7f090009;
         public static final int HomeActivity_LabelNextMatch=0x7f09000b;
-        public static final int HomeActivity_MenuAddMatch=0x7f090010;
-        public static final int HomeActivity_MenuSettings=0x7f09000e;
+        public static final int HomeActivity_MenuAddMatch=0x7f090011;
+        public static final int HomeActivity_MenuSettings=0x7f09000f;
         public static final int HomeActivity_TextViewNewestBestTime=0x7f090008;
         public static final int HomeActivity_TextViewNextMatch=0x7f09000a;
-        public static final int SettingsActivity_MenuSave=0x7f090011;
-        public static final int menu_about=0x7f09000f;
+        public static final int SettingsActivity_MenuSave=0x7f090012;
+        public static final int menu_about=0x7f090010;
         public static final int textview_aboutText=0x7f090000;
     }
     public static final class layout {
@@ -56,15 +58,15 @@ public final class R {
         public static final int activity_settings=0x7f080002;
     }
     public static final class string {
-        public static final int About_Text=0x7f050008;
-        public static final int AddMatchActivity_CurrentDate=0x7f050006;
-        public static final int Newest_Best_Time=0x7f050005;
-        public static final int Next_Match=0x7f050007;
-        public static final int app_name=0x7f050000;
-        public static final int homemenu_about=0x7f050002;
-        public static final int homemenu_addmatch=0x7f050003;
-        public static final int homemenu_settings=0x7f050001;
-        public static final int settingsmenu_save=0x7f050004;
+        public static final int About_Text=0x7f060008;
+        public static final int AddMatchActivity_CurrentDate=0x7f060006;
+        public static final int Newest_Best_Time=0x7f060005;
+        public static final int Next_Match=0x7f060007;
+        public static final int app_name=0x7f060000;
+        public static final int homemenu_about=0x7f060002;
+        public static final int homemenu_addmatch=0x7f060003;
+        public static final int homemenu_settings=0x7f060001;
+        public static final int settingsmenu_save=0x7f060004;
     }
     public static final class style {
         /** 

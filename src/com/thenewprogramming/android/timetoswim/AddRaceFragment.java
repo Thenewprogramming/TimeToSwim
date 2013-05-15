@@ -5,6 +5,7 @@ import android.app.Dialog;
 import android.app.DialogFragment;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.widget.Spinner;
 
 public class AddRaceFragment extends DialogFragment{
 
@@ -18,6 +19,7 @@ public class AddRaceFragment extends DialogFragment{
 		
 		
 		TheAddRaceDialog.setView(getActivity().getLayoutInflater().inflate(R.layout.add_race_dialog, null));
+		Spinner racetypeSpinner = (Spinner) getActivity().findViewById(R.id.AddRaceDialog_StrokeSelector);
 		
 		
 		TheAddRaceDialog.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {

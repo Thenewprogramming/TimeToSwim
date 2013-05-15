@@ -10,8 +10,5 @@
 	<string name="Newest_Best_Time">34:09</string>
 	<string name="AddMatchActivity_CurrentDate">Click to set a date</string>
     <string name="Next_Match">Kring Sprint</string>
-	<string name="About_Text">This app was created by Reijer Boodt II, who is an incredebly awesome person.</string>
-	<string-array name="Test">
-		<item >Hallo</item>
-	</string-array> 
+	<string name="About_Text">This app was created by Reijer Boodt II, who is an incredebly awesome person.</string> 
 </resources>
