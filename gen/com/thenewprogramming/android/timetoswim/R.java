@@ -9,8 +9,12 @@ package com.thenewprogramming.android.timetoswim;
 
 public final class R {
     public static final class array {
+        public static final int DistancesRugslag=0x7f040003;
+        public static final int DistancesSchoolslag=0x7f040004;
+        public static final int DistancesVlinder=0x7f040002;
+        public static final int DistancesVrijeSlag=0x7f040005;
+        public static final int Strokes=0x7f040001;
         public static final int Test=0x7f040000;
-        public static final int strokes=0x7f040001;
     }
     public static final class attr {
     }

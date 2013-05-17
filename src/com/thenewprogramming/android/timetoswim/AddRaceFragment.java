@@ -5,9 +5,13 @@ import android.app.Dialog;
 import android.app.DialogFragment;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemSelectedListener;
+import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
-public class AddRaceFragment extends DialogFragment{
+public class AddRaceFragment extends DialogFragment implements OnItemSelectedListener{
 
 	public AddRaceFragment() {
 		
@@ -19,7 +23,8 @@ public class AddRaceFragment extends DialogFragment{
 		
 		
 		TheAddRaceDialog.setView(getActivity().getLayoutInflater().inflate(R.layout.add_race_dialog, null));
-		Spinner racetypeSpinner = (Spinner) getActivity().findViewById(R.id.AddRaceDialog_StrokeSelector);
+		Spinner StrokeSpinner = (Spinner) getActivity().findViewById(R.id.AddRaceDialog_StrokeSelector);
+		StrokeSpinner.setOnItemSelectedListener(this);
 		
 		
 		TheAddRaceDialog.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
@@ -32,6 +37,24 @@ public class AddRaceFragment extends DialogFragment{
 	       });
 		
 		return TheAddRaceDialog.create();
+	}
+
+	@Override
+	public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
+		Spinner DistanceSpinner = (Spinner) getActivity().findViewById(R.id.AddRaceDialog_StrokeSelector);
+		
+		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActivity(), R.array.Distances, android.R.layout.simple_spinner_item);
+		
+		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		
+		DistanceSpinner.setAdapter(adapter);
+		
+	}
+
+	@Override
+	public void onNothingSelected(AdapterView<?> arg0) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
