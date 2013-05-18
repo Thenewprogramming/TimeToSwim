@@ -9,7 +9,7 @@
         android:id="@+id/AddMatchActivity_TextFieldName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Name"
+        android:hint="@string/AddRaceActivity_Name"
         android:singleLine="true"
         android:textSize="30sp"/>
     
@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="OnButtonClicked"
-        android:text="Add Race"
+        android:text="@string/AddMatchActivity_AddRace"
         android:textAlignment="center"
         android:textSize="25sp" />
     	
