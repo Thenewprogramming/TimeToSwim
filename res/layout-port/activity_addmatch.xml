@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/AddMatchActivity_Name"
-        
+        android:textAlignment="center"
         android:textSize="30sp"/>
     
     <Button
@@ -32,7 +32,7 @@
     	
 	<ListView
 	    android:id="@+id/AddMatchActivity_ListviewRaces"
-	    android:layout_width="wrap_content"
+	    android:layout_width="match_parent"
 	    android:layout_height="0dp"
 	    android:layout_weight="1"
 	    android:choiceMode="singleChoice"
