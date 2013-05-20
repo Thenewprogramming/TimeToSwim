@@ -2,7 +2,8 @@
 <resources>
     <string-array name="Test">
 		<item>Hallo</item>
-	</string-array><string-array name="Strokes">
+	</string-array>
+	<string-array name="Strokes">
 		<item >Vlinderslag</item>
 		<item >Rugslag</item>
 		<item >Schoolslag</item>

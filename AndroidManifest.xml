@@ -26,11 +26,11 @@
 		
 		<activity class=".AddMatchActivity"
 			android:name="com.thenewprogramming.android.timetoswim.AddMatchActivity"
-			android:label="Add Match" />
+			android:label="@string/AddMatchActivity_ActivityTitle" />
 		
 		<activity class=".SettingsActivity"
 			android:name="com.thenewprogramming.android.timetoswim.SettingsActivity"
-			android:label="Settings" />
+			android:label="@string/SettingsActivity_ActivityTitle" />
 	
 	</application>
 

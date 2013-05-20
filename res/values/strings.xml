@@ -12,5 +12,7 @@
     <string name="Next_Match">Kring Sprint</string>
 	<string name="About_Text">This app was created by Reijer Boodt, who is an incredebly awesome person.</string>
     <string name="AddMatchActivity_AddRace">Add Race</string>
-    <string name="AddRaceActivity_Name">Name</string>
+    <string name="AddMatchActivity_Name">Name</string>
+    <string name="AddMatchActivity_ActivityTitle">Add Match</string>
+    <string name="SettingsActivity_ActivityTitle">Settings</string>
 </resources>

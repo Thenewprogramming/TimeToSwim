@@ -9,8 +9,8 @@
         android:id="@+id/AddMatchActivity_TextFieldName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/AddRaceActivity_Name"
-        android:singleLine="true"
+        android:hint="@string/AddMatchActivity_Name"
+        
         android:textSize="30sp"/>
     
     <Button

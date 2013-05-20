@@ -8,9 +8,7 @@
         android:id="@+id/AddRaceDialog_StrokeSelector"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:contentDescription="Select a stroke"
-        android:entries="@array/Strokes"
-        android:tag="Select Stroke" />
+        android:entries="@array/Strokes" />
 
     <Spinner
         android:id="@+id/AddRaceDialog_DistanceSelector"

@@ -4,7 +4,9 @@
     android:layout_height="fill_parent">	
 	
 	<TextView
-		android:id="@+id/textview_aboutText"
-		android:text="@string/About_Text"/>
+	    android:id="@+id/textview_aboutText"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/About_Text" />
 	
 </RelativeLayout>
