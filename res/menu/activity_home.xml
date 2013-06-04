@@ -14,7 +14,7 @@
 	<item
 		android:id="@+id/HomeActivity_MenuAddMatch"
 		android:orderInCategory="100"
-		android:showAsAction="always|withText"
+		android:showAsAction="ifRoom|withText"
 		android:icon="@drawable/addmatchicon"
 		android:title="@string/homemenu_addmatch"
 		android:onClick="onOptionsItemSelected" />

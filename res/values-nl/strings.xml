@@ -9,5 +9,9 @@
     <string name="AddMatchActivity_Name">Naam</string>
     <string name="AddMatchActivity_ActivityTitle">Wedstrijd Toevoegen</string>
     <string name="SettingsActivity_ActivityTitle">Instellingen</string>
+    <string name="Newest_Best_Time">2.30.47</string>
+	<string name="AddMatchActivity_CurrentDate">Klik om datum in te stellen</string>
+    <string name="Next_Match">Kring wedstrijd purmerend</string>
+	<string name="About_Text">Deze app is gemaakt door mij.</string>
     
 </resources>

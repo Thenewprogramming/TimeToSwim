@@ -44,10 +44,10 @@ public class AddRaceFragment extends DialogFragment implements OnItemSelectedLis
 	public void onItemSelected(AdapterView<?> parent, View view,  int pos, long id) {
 		Spinner DistanceSpinner = (Spinner) getActivity().findViewById(R.id.AddRaceDialog_StrokeSelector);
 		String SelectedtextView = (String) parent.getItemAtPosition(pos);
-		if(SelectedtextView.getText().equals()){
+		/*if(SelectedtextView.getText().equals()){
 			
-		}
-		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActivity(), R.array.Distances, android.R.layout.simple_spinner_item);
+		}*/
+		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActivity(), R.array.DistancesVlinder, android.R.layout.simple_spinner_item);
 		
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		
