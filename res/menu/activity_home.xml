@@ -4,19 +4,22 @@
         android:id="@+id/HomeActivity_MenuSettings"
         android:orderInCategory="100"
 		android:showAsAction="never"
-        android:title="@string/homemenu_settings"
+        android:title="@string/globals_settings"
 		android:onClick="onOptionsItemSelected" />
+	
 	<item
-		android:id="@+id/menu_about"
+		android:id="@+id/HomeActivity_MenuAbout"
 		android:orderInCategory="100"
 		android:showAsAction="never"
-		android:title="@string/homemenu_about" />
+		android:title="@string/globals_about" 
+		android:onClick="onOptionsItemItemSelected" />
+	
 	<item
 		android:id="@+id/HomeActivity_MenuAddMatch"
 		android:orderInCategory="100"
 		android:showAsAction="ifRoom|withText"
-		android:icon="@drawable/addmatchicon"
-		android:title="@string/homemenu_addmatch"
+		android:icon="@drawable/content_add"
+		android:title="@string/globals_addmatch"
 		android:onClick="onOptionsItemSelected" />
 		
 </menu>

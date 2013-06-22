@@ -9,7 +9,7 @@
         android:id="@+id/AddMatchActivity_TextFieldName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/AddMatchActivity_Name"
+        android:hint="@string/globals_name"
         android:textAlignment="center"
         android:textSize="30sp"/>
     

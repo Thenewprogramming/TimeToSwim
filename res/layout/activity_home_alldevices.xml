@@ -10,28 +10,26 @@
 		android:id="@+id/HomeActivity_TextViewNewestBestTime"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:text="@string/Newest_Best_Time"
 		android:textSize="100sp" />
 
 	<TextView
 		android:id="@+id/HomeActivity_LabelNewestBestTime"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:text="Newest best time:"
+		android:text="@string/HomeActivity_NewestPersonalRecord"
 		android:textSize="30sp" />
 
 	<TextView
 		android:id="@+id/HomeActivity_TextViewNextMatch"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:text="@string/Next_Match"
 		android:textSize="50sp" />
 
 	<TextView
 		android:id="@+id/HomeActivity_LabelNextMatch"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:text="Next Match:"
+		android:text="@string/HomeActivity_NextMatch"
 		android:textSize="30sp" />
 
 </LinearLayout>

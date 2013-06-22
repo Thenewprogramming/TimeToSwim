@@ -2,9 +2,9 @@
 	<item
 		android:id="@+id/SettingsActivity_MenuSave"
 		android:showAsAction="always|withText"
-		android:title="@string/settingsmenu_save"
-		android:icon="@drawable/savesettingsicon"
-		android:onClick="MenuItemSaveClicked"
+		android:title="@string/globals_save"
+		android:icon="@drawable/navigation_accept"
+		android:onClick="onOptionsItemSelected"
 		/>
 	
 </menu>

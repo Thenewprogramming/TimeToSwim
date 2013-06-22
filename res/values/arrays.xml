@@ -9,25 +9,7 @@
 		<item >schoolstroke</item>
 		<item >Freestyle</item>
 	</string-array>
-	<string-array name="DistancesVlinder">
-		<item >25</item>
-		<item >50</item>
-		<item >100</item>
-		<item >200</item>
-	</string-array>
-	<string-array name="DistancesRugslag">
-	    <item >25</item>
-		<item >50</item>
-		<item >100</item>
-		<item >200</item>
-	</string-array>
-	<string-array name="DistancesSchoolslag">
-	    <item >25</item>
-		<item >50</item>
-		<item >100</item>
-		<item >200</item>
-	</string-array>
-	<string-array name="DistancesVrijeSlag">
+	<string-array name="Distances">
 	    <item >25</item>
 		<item >50</item>
 		<item >100</item>

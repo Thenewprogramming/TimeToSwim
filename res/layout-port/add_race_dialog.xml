@@ -14,6 +14,6 @@
         android:id="@+id/AddRaceDialog_DistanceSelector"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:entries="@array/DistancesVlinder" />
+        android:entries="@array/Distances" />
 
 </LinearLayout>
