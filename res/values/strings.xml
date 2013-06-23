@@ -7,12 +7,18 @@
     <string name="globals_addmatch">Add Match</string>
 	<string name="globals_save">Save</string>
 	<string name="globals_name">Name</string>
-	
-	<string name="AddMatchActivity_CurrentDate">Click to set a date</string>
-    <string name="HomeActivity_NextMatch">Next Match</string>
-    <string name="HomeActivity_NewestPersonalRecord">Newest Personal Record</string>
-    <string name="AddMatchActivity_AddRace">Add Race</string>
+
+	<string name="globals_vlinder">Butterfly</string>
+    <string name="globals_rug">Backstroke</string>
+    <string name="globals_school">Breast Stroke</string>
+    <string name="globals_vrij">Freestyle</string>
+
+
+	<string name="addMatchActivity_CurrentDate">Click to set a date</string>
+    <string name="homeActivity_NextMatch">Next Match</string>
+    <string name="homeActivity_NewestPersonalRecord">Newest Personal Record</string>
+    <string name="addMatchActivity_AddRace">Add Race</string>
     
-    <string name="AddMatchActivity_ActivityTitle">Add Match</string>
-    <string name="SettingsActivity_ActivityTitle">Settings</string>
+    <string name="addMatchActivity_ActivityTitle">Add Match</string>
+    <string name="settingsActivity_ActivityTitle">Settings</string>
 </resources>

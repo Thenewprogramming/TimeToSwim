@@ -108,5 +108,9 @@ public class AddMatchActivity extends FragmentActivity implements DatePickerDial
 		}
 		
 	}
+
+    public void OnRaceAdded(int racetypeid){
+
+    }
 	
 }

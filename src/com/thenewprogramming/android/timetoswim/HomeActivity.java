@@ -19,6 +19,7 @@ public class HomeActivity extends Activity {
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.activity_home, menu);
+		
 		return true;
 	}
 	
@@ -38,7 +39,7 @@ public class HomeActivity extends Activity {
 	}
 	
 	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
+	public boolean onOptionsItemSelected(MenuItem item){
 		switch(item.getItemId()){
 			case R.id.HomeActivity_MenuAddMatch:
 				ShowAddMatchActivity();

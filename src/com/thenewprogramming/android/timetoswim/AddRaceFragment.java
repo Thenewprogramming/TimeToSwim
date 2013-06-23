@@ -33,11 +33,12 @@ public class AddRaceFragment extends DialogFragment implements OnItemSelectedLis
 	               //TODO hier de method aanroepen van de activity die alle gegevens van deze race opslaat en de inhoud van de listview update.
 	           }
 	       });
-	TheAddRaceDialog.setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
-	           public void onClick(DialogInterface dialog, int id) {}
-	       });
-		
-		return TheAddRaceDialog.create();
+        TheAddRaceDialog.setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+            }
+        });
+
+        return TheAddRaceDialog.create();
 	}
 
 	@Override
@@ -47,7 +48,7 @@ public class AddRaceFragment extends DialogFragment implements OnItemSelectedLis
 		/*if(SelectedtextView.getText().equals()){
 			
 		}*/
-		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActivity(), R.array.DistancesVlinder, android.R.layout.simple_spinner_item);
+		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActivity(), R.array.Distances, android.R.layout.simple_spinner_item);
 		
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		
@@ -57,7 +58,7 @@ public class AddRaceFragment extends DialogFragment implements OnItemSelectedLis
 
 	@Override
 	public void onNothingSelected(AdapterView<?> arg0) {
-		// TODO Auto-generated method stub
+		//Waarschijnlijk niks hier
 		
 	}
 

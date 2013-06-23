@@ -27,8 +27,8 @@
 		
 		<activity
 			android:name="com.thenewprogramming.android.timetoswim.AddMatchActivity"
-			android:label="@string/AddMatchActivity_ActivityTitle"  
-            android:screenOrientation="sensorPortrait" >
+			android:label="@string/addMatchActivity_ActivityTitle"  
+            android:screenOrientation="sensor" >
 		    
 		    <intent-filter >
 		      <category android:name="android.intent.category.DEFAULT"/>
@@ -38,7 +38,7 @@
 		
 		<activity
 			android:name="com.thenewprogramming.android.timetoswim.SettingsActivity"
-			android:label="@string/SettingsActivity_ActivityTitle" 
+			android:label="@string/settingsActivity_ActivityTitle" 
             android:screenOrientation="sensorPortrait">
 		    
 		    <intent-filter >

@@ -18,7 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="OnButtonClicked"
-        android:text="@string/AddMatchActivity_CurrentDate"
+        android:text="@string/addMatchActivity_CurrentDate"
         android:textSize="25sp" />
 	
     <Button
@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="OnButtonClicked"
-        android:text="@string/AddMatchActivity_AddRace"
+        android:text="@string/addMatchActivity_AddRace"
         android:textAlignment="center"
         android:textSize="25sp" />
     	
