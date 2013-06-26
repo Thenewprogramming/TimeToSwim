@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/AddMatchActivity_MenuSave" 
+		android:showAsAction="always|withText" 
+		android:title="@string/globals_save" 
+		android:icon="@drawable/navigation_accept"
+		android:onClick="onOptionsItemSelected" />
+	
+	
+</menu>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Test">
+		<item>Hallo</item>
+	</string-array>
+	<string-array name="Strokes">
+		<item >Butterfly</item>
+		<item >Backstroke</item>
+		<item >schoolstroke</item>
+		<item >Freestyle</item>
+	</string-array>
+	<string-array name="Distances">
+	    <item >25</item>
+		<item >50</item>
+		<item >100</item>
+		<item >200</item>
+		<item >400</item>
+		<item >800</item>
+		<item >1500</item>
+		<item >2000</item>
+	</string-array>
+    
+</resources>
